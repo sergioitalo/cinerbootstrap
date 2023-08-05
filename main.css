@@ -6,6 +6,8 @@
 
 header {
   background-color: #6e093b;
+  z-index: 1;
+  position: fixed;
   
 }
 
@@ -17,7 +19,7 @@ header {
 
 header .nav-item .nav-link.active {
   background-color: #F2F2F2;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #6e093b;
 }
 
@@ -198,7 +200,16 @@ header .form-control:focus {
 
 
 #fale-conosco {
-  background-color: #1D2326;
+  background-color: #1D2326 ;
+  
+}
+
+
+
+#fale-conosco .form-control:focus {
+  box-shadow: none;
+  border-color: #6e093b;
+
   
 }
 
@@ -206,14 +217,7 @@ header .form-control:focus {
   height: 120px;
 }
 
-#fale-conosco .form-control {
-  border: 2px solid #f2f2f2;
-}
 
-#fale-conosco .form-control:focus {
-  box-shadow: none;
-  border-color: #f2f2f2;
-}
 #fale-conosco .btn {
   background-color: #6e093b;
   color: #fff;
@@ -232,10 +236,37 @@ footer {
   border-top: 1px solid #F2F2F2;
 }
 
+label.error {
+  color: red;
+  
+}
+
+input.error {
+  border-color: red;
+}
+
+textarea.error {
+  border-color: red;
+}
+
+@media screen and (max-width:767px) {
+  #em-cartaz img {
+    height: 450px;
+    object-fit: cover;
+  }
+
+  #em-breve img {
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
 @media screen and (min-width:767px) {
   #fale-conosco form {
     width: 450px;
   }
+
+  
 }
 
 @media screen and (max-width:991px) {
@@ -244,17 +275,24 @@ footer {
     margin-top: 12px;
   }
 
-  header {
-    padding: 16px 0;
-  }
-
-
-
-
   .carousel-item {
     max-height: 300px;
+  }
+
+  .navbar-brand {
+    font-size: 32px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 16px;
   }
 
   
 }
 
+
+@media screen and (min-width:991px) {
+  #bomboniere, #sobre, #fale-conosco {
+    height: 91vh;
+  }
+}
