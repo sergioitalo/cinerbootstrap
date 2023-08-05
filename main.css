@@ -1,0 +1,260 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+header {
+  background-color: #6e093b;
+  
+}
+
+.navbar-brand, .navbar-brand:hover, .nav-item .nav-link {
+  color: #fff;
+}
+
+
+
+header .nav-item .nav-link.active {
+  background-color: #F2F2F2;
+  border-radius: 2px;
+  color: #6e093b;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #6e093b;
+}
+
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+
+
+header form {
+  display: flex;
+  align-items: center;
+  
+}
+
+header .form-control {
+  border: 1px solid #6A6A61;
+
+  
+}
+
+header .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #6A6A61;
+}
+
+.navbar-brand {
+  font-size: 42px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-img-1 {
+  background-image: url(./images/fantasy-2846786_1280.jpg);
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-img-2 {
+  background-image: url(./images/fantasy-4126847_1280.jpg);
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.carousel-img-3 {
+  background-image: url(./images/apocalyptic-g66a4eb802_1280.jpg);
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.color-primary {
+  color: #6e093b;
+}
+
+
+
+#sobre p {
+  color: #1D2326;
+}
+
+.class-14 {
+  background-color: #FF770D;
+  border-radius: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  border: none;
+}
+
+.class-16 {
+  background-color: #FF0D0D;
+  border-radius: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  border: none;
+}
+
+.class-livre {
+  background-color: #0EB31B;
+  border-radius: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  border: none;
+}
+
+
+
+#em-cartaz, #bomboniere {
+  background-color: #f2f2f2;
+}
+
+#em-cartaz .nav-link.active {
+  background-color: #6e093b;
+  color: #fff;
+}
+
+#em-cartaz .nav-link {
+  color: #6e093b;
+  font-weight: bold;
+}
+
+#em-cartaz .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#em-cartaz .nav-item {
+  width: 100%;
+  
+}
+
+#em-cartaz .nav-link {
+  border-radius: 3px;
+}
+
+.color-name-filme {
+  color: #1D2326;
+}
+
+.btn-sinopse, .btn-sinopse:hover {
+  background-color: #6e093b;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-sinopse {
+  margin-right: 8px;
+}
+.btn-comprar, .btn-comprar:hover {
+  background-color: #00ab6b;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.color-secundary {
+  color: #fff;
+}
+
+#em-breve .btn {
+  background-color: #1D2326;
+  color: #fff;
+}
+
+
+
+#fale-conosco {
+  background-color: #1D2326;
+  
+}
+
+#fale-conosco textarea {
+  height: 120px;
+}
+
+#fale-conosco .form-control {
+  border: 2px solid #f2f2f2;
+}
+
+#fale-conosco .form-control:focus {
+  box-shadow: none;
+  border-color: #f2f2f2;
+}
+#fale-conosco .btn {
+  background-color: #6e093b;
+  color: #fff;
+  font-weight: bold;
+}
+
+.list-social li {
+  display: inline;
+}
+
+.list-social li a {
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid #F2F2F2;
+}
+
+@media screen and (min-width:767px) {
+  #fale-conosco form {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  header .form-control {
+    max-width: 250px;
+    margin-top: 12px;
+  }
+
+  header {
+    padding: 16px 0;
+  }
+
+
+
+
+  .carousel-item {
+    max-height: 300px;
+  }
+
+  
+}
+

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinerboostrap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="fixed-top" >
+    <nav class="navbar navbar-expand-lg" id="cabecalho">
+      <div class="container">
+        <h1 class="navbar-brand fw-bold">Cinerbootstrap</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon">
+            <i class="bi bi-list color-secundary fs-1"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown">
+                Programação
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#em-cartaz" class="dropdown-item ">Em cartaz</a>
+                </li>
+                <li>
+                  <a href="#em-breve" class="dropdown-item ">Em Breve</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#bomboniere" class="nav-link fs-5">Bomboniere</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sobre" class="nav-link active fs-5">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#fale-conosco" class="nav-link active fs-5 me-lg-2">Contato</a>
+            </li>
+            <form>
+              <input type="search" class="form-control" placeholder="Buscar">
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+
+
+  <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true" tabindex="0">
+    <section id="em-cartaz" class="pb-5 pt-0">
+
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-img-1"  data-bs-interval="2000">
+    
+          </div>
+          <div class="carousel-item carousel-img-2" data-bs-interval="2000">
+            
+          </div>
+          <div class="carousel-item carousel-img-3" data-bs-interval="2000">
+    
+          </div>
+          <div class="carousel-indicators">
+            <button data-bs-target="#carousel" data-bs-slide-to="0" class="active" type="button"></button>
+            <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
+            <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <h2 class="color-primary fw-bold h1 mt-4">Filmes em cartaz</h2>
+        </div>
+        <div class="row mt-4 menu">
+          <nav class="nav nav-pills justify-content-center">
+            <button type="button" class="fs-5 nav-link active" data-bs-toggle="pill" data-bs-target="#cartaz-acao">Ação</button>
+            <button type="button" class="fs-5 nav-link" data-bs-toggle="pill" data-bs-target="#cartaz-terror">Terror</button>
+            <button type="button" class="fs-5 nav-link" data-bs-toggle="pill" data-bs-target="#cartaz-aventura">Aventura</button>
+          </nav>
+        </div>
+        <div class="row mt-5">
+          <div class="tab-content">
+            <div class="tab-pane show active" id="cartaz-acao">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/man-gb5c03f6a7_1280.jpg" alt="">
+                  <button type="button" class="class-14">14</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse">Sinopse</button>
+                  <div class="modal fade" id="sinopse">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/gang-gab5d3b233_1280.jpg" alt="">
+                  <button type="button" class="class-14">14</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse">Sinopse</button>
+                  <div class="modal fade" id="sinopse">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <43 class="modal-title color-primary">Sinopse</43>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/gangster-gb0d701f3a_1280.jpg" alt="">
+                  <button type="button" class="class-14">14</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse">Sinopse</button>
+                  <div class="modal fade" id="sinopse">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>
+                
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="cartaz-terror">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/portrait-gad2c9e6de_1280.jpg" alt="">
+                  <button type="button" class="class-16">16</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse1">Sinopse</button>
+                  <div class="modal fade" id="sinopse1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/gothic-g6bf5678c3_1280.jpg" alt="">
+                  <button type="button" class="class-16">16</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse1">Sinopse</button>
+                  <div class="modal fade" id="sinopse1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/stairs-gdb76ec9ac_1280.jpg" alt="">
+                  <button type="button" class="class-16">16</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse1">Sinopse</button>
+                  <div class="modal fade" id="sinopse1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>  
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="cartaz-aventura">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/horse-gffae203b9_1280.jpg" alt="">
+                  <button type="button" class="class-livre">L</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse2">Sinopse</button>
+                  <div class="modal fade" id="sinopse2">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div>  
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/woman-g6484c3ad2_1280.jpg" alt="">
+                  <button type="button" class="class-livre">L</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse2">Sinopse</button>
+                  <div class="modal fade" id="sinopse2">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div> 
+                <div class="col-md-4 mb-4">
+                  <img class="d-block w-100 rounded mb-2" src="./images/biking-g8e65cc389_1280.jpg" alt="">
+                  <button type="button" class="class-livre">L</button>
+                  <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+                  <button type="button" class="btn btn-sinopse" data-bs-toggle="modal" data-bs-target="#sinopse2">Sinopse</button>
+                  <div class="modal fade" id="sinopse2">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title color-primary">Sinopse</h3>
+                          <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt autem numquam nam pariatur cupiditate ad nulla magnam amet, maiores exercitationem sunt totam velit molestias consequuntur suscipit eligendi vitae veniam ducimus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-comprar" type="button">Comprar</button>
+                </div> 
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="em-breve" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="color-primary fw-bold mb-4 h1">Filmes em breve</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/man-g17f4585f9_1280.jpg" alt="">
+            <button type="button" class="class-14">14</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/viet-nam-war-gcc6b8b532_1280.jpg" alt="">
+            <button type="button" class="class-14">14</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4  mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/man-gffae652f6_1280.jpg" alt="">
+            <button type="button" class="class-livre">L</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/refuel-g8bbcd5b8c_1280.jpg" alt="">
+            <button type="button" class="class-14">14</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/ferrari-g64a6acff4_1280.jpg" alt="">
+            <button type="button" class="class-livre">L</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/cosplay-g8ddcff26c_1280.jpg" alt="">
+            <button type="button" class="class-livre">L</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/marvel-gb7ab43dbb_1280.jpg" alt="">
+            <button type="button" class="class-14">14</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+          <div class="col-lg-3 col-md-4 mb-4">
+            <img class="d-block w-100 rounded mb-2" src="./images/dirt-bike-g4dfc36e1b_1280.jpg" alt="">
+            <button type="button" class="class-14">14</button>
+            <h4 class="color-name-filme fw-bold">Nome do Filme</h4>
+            <button class="btn" type="button">Estréia em 10/10/2024</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="bomboniere" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="color-primary fw-bold mb-4 h1">Bomboniere</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-4">
+            <img src="./images/popcorn-gf8d3d1ee2_1280.jpg" alt="" class="d-block w-100 rounded mb-lg-4 mb-2">
+            <h4 class="color-primary fw-bold text-center color-name-filme">Pipoca</h4>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="./images/cocacola-g7cd5e9a9b_1280.jpg" alt="" class="d-block w-100 rounded mb-lg-4 mb-2">
+            <h4 class="color-primary fw-bold text-center color-name-filme">Bebidas</h4>
+          </div>
+          <div class="col-md-4">
+            <img src="./images/joshua-fernandez-dxAwStHCCgk-unsplash.jpg" alt="" class="d-block w-100 rounded mb-lg-4 mb-2">
+            <h4 class="color-primary fw-bold text-center color-name-filme">Guloseimas</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="sobre" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="color-primary fw-bold h1">Cinema</h2>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-6 col-md-12">
+            <img class="d-block w-100 rounded mb-4" src="./images/performance-hall-ga96e132dc_1280.jpg" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h3 class="color-primary fw-bold text-center mt-md-4 mt-lg-0 mb-4">Cinerbootstrap</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus consequuntur fuga hic quaerat ullam, facere ab nihil quo tempore quod deserunt vero magni nesciunt nulla animi temporibus quisquam! Dolore.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus consequuntur fuga hic quaerat ullam, facere ab nihil quo tempore quod deserunt vero magni nesciunt nulla animi temporibus quisquam! Dolore.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus consequuntur fuga hic quaerat ullam, facere ab nihil quo tempore quod deserunt vero magni nesciunt nulla animi temporibus quisquam! Dolore.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus consequuntur fuga hic quaerat ullam, facere ab nihil quo tempore quod deserunt vero magni nesciunt nulla animi temporibus quisquam! Dolore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="fale-conosco" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="color-secundary fw-bold mb-4">Fale conosco</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label color-secundary fw-bold mb-0" for="nome" >Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome">
+              </div>
+              <div class="mb-3">
+                <label class="form-label color-secundary fw-bold mb-0" for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label color-secundary fw-bold mb-0" for="telefone">Telefone:</label>
+                <input class="form-control" type="tel" name="telefone" id="telefone">
+              </div>
+              <div class="mb-3">
+                <label class="form-label color-secundary fw-bold mb-0" for="mensagem">Mensagem:</label>
+                <textarea class="form-control" name="mensagem" id="mensagem" ></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row mt-4 mt-lg-0">
+              <h4 class="fw-bold color-secundary mb-3">Redes Sociais</h4>
+              <ul class="list-social">
+                <li>
+                  <a href="#" class="fs-3">
+                    <i class="bi bi-facebook color-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="fs-3 ms-2 me-2">
+                    <i class="bi bi-whatsapp color-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="fs-3">
+                    <i class="bi bi-instagram color-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="fs-3 ms-2">
+                    <i class="bi bi-youtube color-primary"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row mt-4">
+              <h4 class="fw-bold color-secundary mb-3">Endereço</h4>
+              <p class="color-secundary">
+                Rua Av. Floriano Peixoto, N° 2370, Centenário, Campina Grande - PB
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <footer class="mt-5 pt-5">
+            <p class="color-secundary">
+              &copy; - 2023 Cinerboostrap - Todos os direitos reservados
+            </p> 
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
